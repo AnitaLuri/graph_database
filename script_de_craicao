@@ -1,0 +1,343 @@
+// Criação de nós Usuário
+CREATE (u1:Usuario {USER_ID: 1, USER_NAME: "Carlos", EMAIL: "carlos@email.com"}),
+       (u2:Usuario {USER_ID: 2, USER_NAME: "Mariana", EMAIL: "mariana@email.com"}),
+       (u3:Usuario {USER_ID: 3, USER_NAME: "Paula", EMAIL: "paula@email.com"}),
+       (u4:Usuario {USER_ID: 4, USER_NAME: "João", EMAIL: "joao@email.com"}),
+       (u5:Usuario {USER_ID: 5, USER_NAME: "Luiza", EMAIL: "luiza@email.com"}),
+       (u6:Usuario {USER_ID: 6, USER_NAME: "Bruno", EMAIL: "bruno@email.com"}),
+       (u7:Usuario {USER_ID: 7, USER_NAME: "Ana", EMAIL: "ana@email.com"}),
+       (u8:Usuario {USER_ID: 8, USER_NAME: "Julia", EMAIL: "julia@email.com"}),
+       (u9:Usuario {USER_ID: 9, USER_NAME: "Pedro", EMAIL: "pedro@email.com"}),
+       (u10:Usuario {USER_ID: 10, USER_NAME: "Rafael", EMAIL: "rafael@email.com"}),
+       (u11:Usuario {USER_ID: 11, USER_NAME: "Clara", EMAIL: "clara@email.com"}),
+       (u12:Usuario {USER_ID: 12, USER_NAME: "Renata", EMAIL: "renata@email.com"}),
+       (u13:Usuario {USER_ID: 13, USER_NAME: "Felipe", EMAIL: "felipe@email.com"}),
+       (u14:Usuario {USER_ID: 14, USER_NAME: "Thiago", EMAIL: "thiago@email.com"}),
+       (u15:Usuario {USER_ID: 15, USER_NAME: "Bia", EMAIL: "bia@email.com"}),
+        (u16:Usuario {USER_ID: 16, USER_NAME: "Daniely", EMAIL: "daniely@email.com"}),
+       (u17:Usuario {USER_ID: 17, USER_NAME: "Caique", EMAIL: "caique@email.com"}),
+       (u18:Usuario {USER_ID: 18, USER_NAME: "Joaquim", EMAIL: "Joaquim@email.com"}),
+       (u19:Usuario {USER_ID: 19, USER_NAME: "Caetano", EMAIL: "caetano@email.com"}),
+       (u20:Usuario {USER_ID: 20, USER_NAME: "Lucas", EMAIL: "lucas@email.com"}),
+       (u21:Usuario {USER_ID: 21, USER_NAME: "Eliz", EMAIL: "eliz@email.com"}),
+       (u22:Usuario {USER_ID: 22, USER_NAME: "Tom", EMAIL: "tom@email.com"}),
+       (u23:Usuario {USER_ID: 23, USER_NAME: "Bela", EMAIL: "bela@email.com"}),
+       (u24:Usuario {USER_ID: 24, USER_NAME: "Vitoria", EMAIL: "vitoria@email.com"}),
+       (u25:Usuario {USER_ID: 25, USER_NAME: "Marcio", EMAIL: "marcio@email.com"});
+
+ 
+// Criação das Listas
+CREATE (l1:Lista {LISTA_ID: 1, NOME: "Lista Semanal Carlos" }),
+       (l2:Lista {LISTA_ID: 2, NOME: "Lista Mensal Mariana" }),
+       (l3:Lista {LISTA_ID: 3, NOME: "Lista Semanal Paula" }),
+       (l4:Lista {LISTA_ID: 4, NOME: "Lista Mensal João" }),
+       (l5:Lista {LISTA_ID: 5, NOME: "Lista Rápida Luiza" }),
+       (l6:Lista {LISTA_ID: 6, NOME: "Lista Completa Bruno" }),
+       (l7:Lista {LISTA_ID: 7, NOME: "Lista Ana" }),
+       (l8:Lista {LISTA_ID: 8, NOME: "Lista Básica Julia" }),
+       (l9:Lista {LISTA_ID: 9, NOME: "Lista Econômica Pedro" }),
+       (l10:Lista {LISTA_ID: 10, NOME: "Lista Rafael" }),
+       (l11:Lista {LISTA_ID: 11, NOME: "Lista Clara" }),
+       (l12:Lista {LISTA_ID: 12, NOME: "Lista Renata" }),
+       (l13:Lista {LISTA_ID: 13, NOME: "Lista Econômica Felipe" }),
+       (l14:Lista {LISTA_ID: 14, NOME: "Lista Completa Thiago" }),
+       (l15:Lista {LISTA_ID: 15, NOME: "Lista Bia" }),
+       (l16:Lista {LISTA_ID: 16, NOME: "Lista Ana" }),
+       (l17:Lista {LISTA_ID: 17, NOME: "Lista Básica test17" }),
+       (l18:Lista {LISTA_ID: 18, NOME: "Lista Econômica test18" }),
+       (l19:Lista {LISTA_ID: 19, NOME: "Lista Caetano" }),
+       (l20:Lista {LISTA_ID: 20, NOME: "Lista Joaquim" }),
+       (l21:Lista {LISTA_ID: 21, NOME: "Lista Caique" }),
+       (l22:Lista {LISTA_ID: 22, NOME: "Lista Econômica test22" }),
+       (l23:Lista {LISTA_ID: 23, NOME: "Lista Completa test23" }),
+       (l24:Lista {LISTA_ID: 24, NOME: "Lista Daniely" }),
+       (l25:Lista {LISTA_ID: 25, NOME: "Lista Caetano2" }),
+       (l26:Lista {LISTA_ID: 26, NOME: "Lista Joaquimtest" }),
+       (l27:Lista {LISTA_ID: 27, NOME: "Lista Caique festa" }),
+       (l28:Lista {LISTA_ID: 28, NOME: "Lista Econômica Ana" }),
+       (l29:Lista {LISTA_ID: 29, NOME: "Lista Completa João" }),
+       (l30:Lista {LISTA_ID: 30, NOME: "Lista Daniely Sexta" });
+
+ 
+// Criação  dos Produtos
+CREATE (p1:Produto {PRODUCT_ID: 1, PRODUCT_NAME: "Arroz", CATEGORY: "Grãos", BRAND: "MarcaX"}),
+       (p2:Produto {PRODUCT_ID: 2, PRODUCT_NAME: "Feijão", CATEGORY: "Grãos", BRAND: "MarcaY"}),
+       (p3:Produto {PRODUCT_ID: 3, PRODUCT_NAME: "Leite", CATEGORY: "Laticínios", BRAND: "MarcaZ"}),
+       (p4:Produto {PRODUCT_ID: 4, PRODUCT_NAME: "Açúcar", CATEGORY: "Doces", BRAND: "DoceA"}),
+       (p5:Produto {PRODUCT_ID: 5, PRODUCT_NAME: "Sal", CATEGORY: "Temperos", BRAND: "TemperoB"}),
+       (p6:Produto {PRODUCT_ID: 6, PRODUCT_NAME: "Óleo", CATEGORY: "Óleos", BRAND: "MarcaO"}),
+       (p7:Produto {PRODUCT_ID: 7, PRODUCT_NAME: "Macarrão", CATEGORY: "Massas", BRAND: "MarcaM"}),
+       (p8:Produto {PRODUCT_ID: 8, PRODUCT_NAME: "Detergente", CATEGORY: "Limpeza", BRAND: "LimpoL"}),
+       (p9:Produto {PRODUCT_ID: 9, PRODUCT_NAME: "Sabão", CATEGORY: "Limpeza", BRAND: "LimpoL"}),
+       (p10:Produto {PRODUCT_ID: 10, PRODUCT_NAME: "Shampoo", CATEGORY: "Higiene", BRAND: "HigieneH"}),
+       (p11:Produto {PRODUCT_ID: 11, PRODUCT_NAME: "Condicionador", CATEGORY: "Higiene", BRAND: "HigieneH"}),
+       (p12:Produto {PRODUCT_ID: 12, PRODUCT_NAME: "Desodorante", CATEGORY: "Higiene", BRAND: "HigieneH"}),
+       (p13:Produto {PRODUCT_ID: 13, PRODUCT_NAME: "Biscoito", CATEGORY: "Snacks", BRAND: "DoceA"}),
+       (p14:Produto {PRODUCT_ID: 14, PRODUCT_NAME: "Suco", CATEGORY: "Bebidas", BRAND: "MarcaS"}),
+       (p15:Produto {PRODUCT_ID: 15, PRODUCT_NAME: "Café", CATEGORY: "Bebidas", BRAND: "MarcaC"}),
+      (p16:Produto {PRODUCT_ID: 16, PRODUCT_NAME: "Farinha de Trigo", CATEGORY: "Grãos", BRAND: "MarcaF"}),
+       (p17:Produto {PRODUCT_ID: 17, PRODUCT_NAME: "Farinha de Mandioca", CATEGORY: "Grãos", BRAND: "MarcaG"}),
+       (p18:Produto {PRODUCT_ID: 18, PRODUCT_NAME: "Fubá", CATEGORY: "Grãos", BRAND: "MarcaF"}),
+       (p19:Produto {PRODUCT_ID: 19, PRODUCT_NAME: "Lentilha", CATEGORY: "Grãos", BRAND: "MarcaX"}),
+       (p20:Produto {PRODUCT_ID: 20, PRODUCT_NAME: "Ervilha", CATEGORY: "Grãos", BRAND: "MarcaY"}),
+       (p21:Produto {PRODUCT_ID: 21, PRODUCT_NAME: "Milho em Conserva", CATEGORY: "Conservas", BRAND: "MarcaZ"}),
+       (p22:Produto {PRODUCT_ID: 22, PRODUCT_NAME: "Sardinha em Conserva", CATEGORY: "Conservas", BRAND: "PeixeA"}),
+       (p23:Produto {PRODUCT_ID: 23, PRODUCT_NAME: "Atum em Conserva", CATEGORY: "Conservas", BRAND: "PeixeA"}),
+       (p24:Produto {PRODUCT_ID: 24, PRODUCT_NAME: "Tomate Pelado", CATEGORY: "Conservas", BRAND: "NaturalT"}),
+       (p25:Produto {PRODUCT_ID: 25, PRODUCT_NAME: "Extrato de Tomate", CATEGORY: "Molhos", BRAND: "MolhoM"}),
+       (p26:Produto {PRODUCT_ID: 26, PRODUCT_NAME: "Manteiga", CATEGORY: "Laticínios", BRAND: "MarcaZ"}),
+       (p27:Produto {PRODUCT_ID: 27, PRODUCT_NAME: "Margarina", CATEGORY: "Laticínios", BRAND: "MarcaZ"}),
+       (p28:Produto {PRODUCT_ID: 28, PRODUCT_NAME: "Queijo Mussarela", CATEGORY: "Laticínios", BRAND: "LaticínioL"}),
+       (p29:Produto {PRODUCT_ID: 29, PRODUCT_NAME: "Queijo Prato", CATEGORY: "Laticínios", BRAND: "LaticínioL"}),
+       (p30:Produto {PRODUCT_ID: 30, PRODUCT_NAME: "Frango Congelado", CATEGORY: "Carnes", BRAND: "CarneC"}),
+       (p31:Produto {PRODUCT_ID: 31, PRODUCT_NAME: "Carne Moída", CATEGORY: "Carnes", BRAND: "CarneC"}),
+       (p32:Produto {PRODUCT_ID: 32, PRODUCT_NAME: "Linguiça", CATEGORY: "Carnes", BRAND: "CarneC"}),
+       (p33:Produto {PRODUCT_ID: 33, PRODUCT_NAME: "Ovos", CATEGORY: "Ovos", BRAND: "FazendaF"}),
+       (p34:Produto {PRODUCT_ID: 34, PRODUCT_NAME: "Pão Francês", CATEGORY: "Padaria", BRAND: "PadariaP"}),
+       (p35:Produto {PRODUCT_ID: 35, PRODUCT_NAME: "Pão de Forma", CATEGORY: "Padaria", BRAND: "PadariaP"});
+ 
+
+// Criação dos Históricos de Preços
+CREATE (h1:Historico {PRICE_ID: 1, DATE: date("2024-01-01"), PRICE: 5.00}),
+       (h2:Historico {PRICE_ID: 2, DATE: date("2024-01-02"), PRICE: 4.80}),
+       (h3:Historico {PRICE_ID: 3, DATE: date("2024-01-03"), PRICE: 4.75}),
+       (h4:Historico {PRICE_ID: 4, DATE: date("2024-01-04"), PRICE: 6.00}),
+       (h5:Historico {PRICE_ID: 5, DATE: date("2024-01-05"), PRICE: 5.20}),
+       (h6:Historico {PRICE_ID: 6, DATE: date("2024-01-06"), PRICE: 5.10}),
+       (h7:Historico {PRICE_ID: 7, DATE: date("2024-01-07"), PRICE: 4.90}),
+       (h8:Historico {PRICE_ID: 8, DATE: date("2024-01-08"), PRICE: 5.50}),
+       (h9:Historico {PRICE_ID: 9, DATE: date("2024-01-09"), PRICE: 5.40}),
+       (h10:Historico {PRICE_ID: 10, DATE: date("2024-01-10"), PRICE: 4.85}),
+       (h11:Historico {PRICE_ID: 11, DATE: date("2024-01-11"), PRICE: 5.60}),
+       (h12:Historico {PRICE_ID: 12, DATE: date("2024-01-12"), PRICE: 6.10}),
+       (h13:Historico {PRICE_ID: 13, DATE: date("2024-01-13"), PRICE: 5.30}),
+       (h14:Historico {PRICE_ID: 14, DATE: date("2024-01-14"), PRICE: 5.00}),
+       (h15:Historico {PRICE_ID: 15, DATE: date("2024-01-15"), PRICE: 4.95}),
+       (h16:Historico {PRICE_ID: 16, DATE: date("2024-01-16"), PRICE: 5.25}), 
+       (h17:Historico {PRICE_ID: 17, DATE: date("2024-01-17"), PRICE: 5.10}),  
+        (h18:Historico {PRICE_ID: 18, DATE: date("2024-01-18"), PRICE: 6.20}),        
+        (h19:Historico {PRICE_ID: 19, DATE: date("2024-01-19"), PRICE: 5.75}), 
+        (h20:Historico {PRICE_ID: 20, DATE: date("2024-01-20"), PRICE: 5.35}), 
+        (h21:Historico {PRICE_ID: 21, DATE: date("2024-01-21"), PRICE: 4.95}),               
+        (h22:Historico {PRICE_ID: 22, DATE: date("2024-01-22"), PRICE: 6.00}), 
+        (h23:Historico {PRICE_ID: 23, DATE: date("2024-01-23"), PRICE: 5.40}), 
+        (h24:Historico {PRICE_ID: 24, DATE: date("2024-01-24"), PRICE: 5.15}), 
+        (h25:Historico {PRICE_ID: 25, DATE: date("2024-01-25"), PRICE: 5.50}),
+       (h26:Historico {PRICE_ID: 26, DATE: date("2024-01-21"), PRICE: 6.95}),               
+        (h27:Historico {PRICE_ID: 27, DATE: date("2024-01-22"), PRICE: 8.00}), 
+        (h28:Historico {PRICE_ID: 28, DATE: date("2024-01-23"), PRICE: 7.40}), 
+        (h29:Historico {PRICE_ID: 29, DATE: date("2024-01-24"), PRICE: 7.15}), 
+        (h30:Historico {PRICE_ID: 30, DATE: date("2024-01-25"), PRICE: 7.50});
+
+ 
+
+// Criação das Lojas
+CREATE (s1:Loja {STORE_ID: 1, STORE_NAME: "Supermercado A", LOCATION: "Centro"}),
+       (s2:Loja {STORE_ID: 2, STORE_NAME: "Supermercado B", LOCATION: "Bairro"}),
+       (s3:Loja {STORE_ID: 3, STORE_NAME: "Supermercado C", LOCATION: "Zona Norte"}),
+       (s4:Loja {STORE_ID: 4, STORE_NAME: "Supermercado D", LOCATION: "Zona Sul"}),
+       (s5:Loja {STORE_ID: 5, STORE_NAME: "Supermercado E", LOCATION: "Centro"}),
+       (s6:Loja {STORE_ID: 6, STORE_NAME: "Supermercado F", LOCATION: "Bairro"}),
+       (s7:Loja {STORE_ID: 7, STORE_NAME: "Supermercado G", LOCATION: "Zona Norte"}),
+       (s8:Loja {STORE_ID: 8, STORE_NAME: "Supermercado H", LOCATION: "Zona Sul"}),
+       (s9:Loja {STORE_ID: 9, STORE_NAME: "Supermercado I", LOCATION: "Centro"}),
+       (s10:Loja {STORE_ID: 10, STORE_NAME: "Supermercado J", LOCATION: "Bairro"}),
+       (s11:Loja {STORE_ID: 11, STORE_NAME: "Supermercado K", LOCATION: "Zona Norte"}),
+       (s12:Loja {STORE_ID: 12, STORE_NAME: "Supermercado L", LOCATION: "Zona Sul"}),
+       (s13:Loja {STORE_ID: 13, STORE_NAME: "Supermercado M", LOCATION: "Centro"}),
+       (s14:Loja {STORE_ID: 14, STORE_NAME: "Supermercado N", LOCATION: "Bairro"}),
+       (s15:Loja {STORE_ID: 15, STORE_NAME: "Supermercado O", LOCATION: "Zona Norte"});
+ 
+// Relacionamento: Usuário cria Lista
+MATCH (u:Usuario {USER_ID: 1}), (l:Lista {LISTA_ID: 1}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 2}), (l:Lista {LISTA_ID: 2}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 3}), (l:Lista {LISTA_ID: 3}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 4}), (l:Lista {LISTA_ID: 4}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 5}), (l:Lista {LISTA_ID: 5}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 6}), (l:Lista {LISTA_ID: 6}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 7}), (l:Lista {LISTA_ID: 7}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 8}), (l:Lista {LISTA_ID: 8}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 9}), (l:Lista {LISTA_ID: 9}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 10}), (l:Lista {LISTA_ID: 10}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 11}), (l:Lista {LISTA_ID: 11}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 12}), (l:Lista {LISTA_ID: 12}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 13}), (l:Lista {LISTA_ID: 13}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 14}), (l:Lista {LISTA_ID: 14}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 15}), (l:Lista {LISTA_ID: 15}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 7}), (l:Lista {LISTA_ID: 16}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 17}), (l:Lista {LISTA_ID: 17}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 18}), (l:Lista {LISTA_ID: 18}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 19}), (l:Lista {LISTA_ID: 19}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 18}), (l:Lista {LISTA_ID: 20}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 17}), (l:Lista {LISTA_ID: 21}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 22}), (l:Lista {LISTA_ID: 22}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 23}), (l:Lista {LISTA_ID: 23}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 16}), (l:Lista {LISTA_ID: 24}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 19}), (l:Lista {LISTA_ID: 25}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 18}), (l:Lista {LISTA_ID: 26}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 17}), (l:Lista {LISTA_ID: 27}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 7}), (l:Lista {LISTA_ID: 28}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 4}), (l:Lista {LISTA_ID: 29}) CREATE (u)-[:CRIOU]->(l);
+MATCH (u:Usuario {USER_ID: 16}), (l:Lista {LISTA_ID: 30}) CREATE (u)-[:CRIOU]->(l);
+
+// Relacionamento: Lista contém Produto
+MATCH (l:Lista {LISTA_ID: 1}), (p:Produto {PRODUCT_ID: 1}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 1}), (p:Produto {PRODUCT_ID: 2}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 2}), (p:Produto {PRODUCT_ID: 3}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 2}), (p:Produto {PRODUCT_ID: 4}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 3}), (p:Produto {PRODUCT_ID: 5}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 3}), (p:Produto {PRODUCT_ID: 6}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 4}), (p:Produto {PRODUCT_ID: 7}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 4}), (p:Produto {PRODUCT_ID: 8}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 5}), (p:Produto {PRODUCT_ID: 9}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 5}), (p:Produto {PRODUCT_ID: 10}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 6}), (p:Produto {PRODUCT_ID: 11}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 6}), (p:Produto {PRODUCT_ID: 12}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 7}), (p:Produto {PRODUCT_ID: 13}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 7}), (p:Produto {PRODUCT_ID: 14}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 8}), (p:Produto {PRODUCT_ID: 15}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 9}), (p:Produto {PRODUCT_ID: 1}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 9}), (p:Produto {PRODUCT_ID: 2}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 10}), (p:Produto {PRODUCT_ID: 3}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 10}), (p:Produto {PRODUCT_ID: 4}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 11}), (p:Produto {PRODUCT_ID: 5}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 11}), (p:Produto {PRODUCT_ID: 6}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 12}), (p:Produto {PRODUCT_ID: 7}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 12}), (p:Produto {PRODUCT_ID: 8}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 13}), (p:Produto {PRODUCT_ID: 9}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 13}), (p:Produto {PRODUCT_ID: 10}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 14}), (p:Produto {PRODUCT_ID: 11}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 14}), (p:Produto {PRODUCT_ID: 12}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 15}), (p:Produto {PRODUCT_ID: 13}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 15}), (p:Produto {PRODUCT_ID: 14}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 16}), (p:Produto {PRODUCT_ID: 16}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 16}), (p:Produto {PRODUCT_ID: 17}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 17}), (p:Produto {PRODUCT_ID: 18}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 17}), (p:Produto {PRODUCT_ID: 19}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 18}), (p:Produto {PRODUCT_ID: 20}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 18}), (p:Produto {PRODUCT_ID: 21}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 19}), (p:Produto {PRODUCT_ID: 22}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 19}), (p:Produto {PRODUCT_ID: 23}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 20}), (p:Produto {PRODUCT_ID: 24}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 20}), (p:Produto {PRODUCT_ID: 25}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 21}), (p:Produto {PRODUCT_ID: 26}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 21}), (p:Produto {PRODUCT_ID: 27}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 22}), (p:Produto {PRODUCT_ID: 28}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 22}), (p:Produto {PRODUCT_ID: 29}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 23}), (p:Produto {PRODUCT_ID: 30}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 23}), (p:Produto {PRODUCT_ID: 1}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 24}), (p:Produto {PRODUCT_ID: 2}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 24}), (p:Produto {PRODUCT_ID: 3}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 25}), (p:Produto {PRODUCT_ID: 4}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 25}), (p:Produto {PRODUCT_ID: 5}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 26}), (p:Produto {PRODUCT_ID: 6}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 26}), (p:Produto {PRODUCT_ID: 7}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 27}), (p:Produto {PRODUCT_ID: 8}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 27}), (p:Produto {PRODUCT_ID: 9}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 28}), (p:Produto {PRODUCT_ID: 10}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 28}), (p:Produto {PRODUCT_ID: 11}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 29}), (p:Produto {PRODUCT_ID: 12}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 29}), (p:Produto {PRODUCT_ID: 13}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 30}), (p:Produto {PRODUCT_ID: 14}) CREATE (l)-[:CONTIEN]->(p);
+MATCH (l:Lista {LISTA_ID: 30}), (p:Produto {PRODUCT_ID: 15}) CREATE (l)-[:CONTIEN]->(p);
+
+// Relacionamento: Produto disponível em múltiplas Lojas
+MATCH (p:Produto {PRODUCT_ID: 1}), (s:Loja {STORE_ID: 1}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 1}), (s:Loja {STORE_ID: 2}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 2}), (s:Loja {STORE_ID: 3}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 2}), (s:Loja {STORE_ID: 4}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 3}), (s:Loja {STORE_ID: 5}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 3}), (s:Loja {STORE_ID: 6}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 4}), (s:Loja {STORE_ID: 7}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 4}), (s:Loja {STORE_ID: 8}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 5}), (s:Loja {STORE_ID: 9}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 5}), (s:Loja {STORE_ID: 10}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 6}), (s:Loja {STORE_ID: 11}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 6}), (s:Loja {STORE_ID: 12}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 7}), (s:Loja {STORE_ID: 13}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 7}), (s:Loja {STORE_ID: 14}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 8}), (s:Loja {STORE_ID: 15}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 9}), (s:Loja {STORE_ID: 1}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 9}), (s:Loja {STORE_ID: 2}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 10}), (s:Loja {STORE_ID: 3}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 10}), (s:Loja {STORE_ID: 4}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 11}), (s:Loja {STORE_ID: 5}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 11}), (s:Loja {STORE_ID: 6}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 12}), (s:Loja {STORE_ID: 7}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 12}), (s:Loja {STORE_ID: 8}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 13}), (s:Loja {STORE_ID: 9}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 13}), (s:Loja {STORE_ID: 10}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 14}), (s:Loja {STORE_ID: 11}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 14}), (s:Loja {STORE_ID: 12}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 15}), (s:Loja {STORE_ID: 13}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 15}), (s:Loja {STORE_ID: 14}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 16}), (s:Loja {STORE_ID: 15}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 17}), (s:Loja {STORE_ID: 1}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 17}), (s:Loja {STORE_ID: 2}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 18}), (s:Loja {STORE_ID: 3}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 18}), (s:Loja {STORE_ID: 4}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 19}), (s:Loja {STORE_ID: 5}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 19}), (s:Loja {STORE_ID: 6}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 20}), (s:Loja {STORE_ID: 7}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 20}), (s:Loja {STORE_ID: 8}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 21}), (s:Loja {STORE_ID: 9}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 21}), (s:Loja {STORE_ID: 10}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 22}), (s:Loja {STORE_ID: 11}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 22}), (s:Loja {STORE_ID: 12}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 23}), (s:Loja {STORE_ID: 13}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 23}), (s:Loja {STORE_ID: 14}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 24}), (s:Loja {STORE_ID: 15}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 25}), (s:Loja {STORE_ID: 1}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 25}), (s:Loja {STORE_ID: 2}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 26}), (s:Loja {STORE_ID: 3}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 26}), (s:Loja {STORE_ID: 4}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 27}), (s:Loja {STORE_ID: 5}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 27}), (s:Loja {STORE_ID: 6}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 28}), (s:Loja {STORE_ID: 7}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 28}), (s:Loja {STORE_ID: 8}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 29}), (s:Loja {STORE_ID: 9}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 29}), (s:Loja {STORE_ID: 10}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 30}), (s:Loja {STORE_ID: 11}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 30}), (s:Loja {STORE_ID: 12}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 31}), (s:Loja {STORE_ID: 13}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 31}), (s:Loja {STORE_ID: 14}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 32}), (s:Loja {STORE_ID: 15}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 33}), (s:Loja {STORE_ID: 1}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 33}), (s:Loja {STORE_ID: 2}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 34}), (s:Loja {STORE_ID: 3}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 34}), (s:Loja {STORE_ID: 4}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 35}), (s:Loja {STORE_ID: 5}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 35}), (s:Loja {STORE_ID: 6}) CREATE (p)-[:DISPONIVEL_EM]->(s);
+
+// Relacionamento: Histórico de Preços associado a Produto e Loja
+MATCH (p:Produto {PRODUCT_ID: 1}), (h:Historico {PRICE_ID: 1}), (s:Loja {STORE_ID: 1}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 1}), (h:Historico {PRICE_ID: 2}), (s:Loja {STORE_ID: 2}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 2}), (h:Historico {PRICE_ID: 3}), (s:Loja {STORE_ID: 3}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 2}), (h:Historico {PRICE_ID: 4}), (s:Loja {STORE_ID: 4}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 3}), (h:Historico {PRICE_ID: 5}), (s:Loja {STORE_ID: 5}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 3}), (h:Historico {PRICE_ID: 6}), (s:Loja {STORE_ID: 6}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 4}), (h:Historico {PRICE_ID: 7}), (s:Loja {STORE_ID: 7}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 4}), (h:Historico {PRICE_ID: 8}), (s:Loja {STORE_ID: 8}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 5}), (h:Historico {PRICE_ID: 9}), (s:Loja {STORE_ID: 9}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 5}), (h:Historico {PRICE_ID: 10}), (s:Loja {STORE_ID: 10}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 6}), (h:Historico {PRICE_ID: 11}), (s:Loja {STORE_ID: 11}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 6}), (h:Historico {PRICE_ID: 12}), (s:Loja {STORE_ID: 12}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 7}), (h:Historico {PRICE_ID: 13}), (s:Loja {STORE_ID: 13}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 7}), (h:Historico {PRICE_ID: 14}), (s:Loja {STORE_ID: 14}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 8}), (h:Historico {PRICE_ID: 15}), (s:Loja {STORE_ID: 15}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 9}), (h:Historico {PRICE_ID: 16}), (s:Loja {STORE_ID: 1}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s); 
+MATCH (p:Produto {PRODUCT_ID: 9}), (h:Historico {PRICE_ID: 17}), (s:Loja {STORE_ID: 2}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s); 
+MATCH (p:Produto {PRODUCT_ID: 10}), (h:Historico {PRICE_ID: 18}), (s:Loja {STORE_ID: 3}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+MATCH (p:Produto {PRODUCT_ID: 10}), (h:Historico {PRICE_ID: 19}), (s:Loja {STORE_ID: 4}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s); 
+MATCH (p:Produto {PRODUCT_ID: 11}), (h:Historico {PRICE_ID: 20}), (s:Loja {STORE_ID: 5}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s); 
+MATCH (p:Produto {PRODUCT_ID: 11}), (h:Historico {PRICE_ID: 21}), (s:Loja {STORE_ID: 6}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s); 
+MATCH (p:Produto {PRODUCT_ID: 12}), (h:Historico {PRICE_ID: 22}), (s:Loja {STORE_ID: 7}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s); 
+MATCH (p:Produto {PRODUCT_ID: 12}), (h:Historico {PRICE_ID: 23}), (s:Loja {STORE_ID: 8}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s); 
+MATCH (p:Produto {PRODUCT_ID: 13}), (h:Historico {PRICE_ID: 24}), (s:Loja {STORE_ID: 9}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s); 
+MATCH (p:Produto {PRODUCT_ID: 13}), (h:Historico {PRICE_ID: 25}), (s:Loja {STORE_ID: 10}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s); 
+MATCH (p:Produto {PRODUCT_ID: 14}), (h:Historico {PRICE_ID: 26}), (s:Loja {STORE_ID: 11}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s); 
+MATCH (p:Produto {PRODUCT_ID: 14}), (h:Historico {PRICE_ID: 27}), (s:Loja {STORE_ID: 12}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s); 
+MATCH (p:Produto {PRODUCT_ID: 15}), (h:Historico {PRICE_ID: 28}), (s:Loja {STORE_ID: 13}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s); 
+MATCH (p:Produto {PRODUCT_ID: 15}), (h:Historico {PRICE_ID: 29}), (s:Loja {STORE_ID: 14}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s); 
+MATCH (p:Produto {PRODUCT_ID: 16}), (h:Historico {PRICE_ID: 30}), (s:Loja {STORE_ID: 15}) CREATE (p)-[:HISTORICO_DE]->(h)-[:PRECO_EM]->(s);
+
